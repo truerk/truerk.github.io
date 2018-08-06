@@ -6,13 +6,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="style/grid.css" rel="stylesheet"> 
-   <link href="fonts/FontAwesome/css/font-awesome.min.css" rel="stylesheet">  
+   <link href="fonts/FontAwesome/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style/swiper.min.css">  
    <link href="style/style2.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="header_menu container">
         <div class="logo">
-             <img src="img/Logo.png" alt="Logo" title="Logo">
+             <a href="index.html"><img src="img/Logo.png" alt="Logo" title="Logo"></a>
         </div>
         <ul class="menu list-unstyle">
             <li><a href="#appointment">appointment</a></li>
@@ -28,11 +30,22 @@
         </ul> 
     </div>
 
-<div class="wrapper-top container-fluid">
+<section class="wrapper-top container-fluid">
     <div class="container">
         <div class="offer row">
             <div class="iphone col col-lg-4">
                 <img src="img/Iphone/Iphone.png" width="346" height="548" alt="iphone" title="iphone">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->                    
+                    <div class="swiper-wrapper">
+                        <!-- Slides --> 
+                        <div class="swiper-slide"><img src="img/Iphone/Слайд_3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/Iphone/Слайд_2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="img/Iphone/Слайд_1.png" alt=""></div>        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!--<img src="img/Iphone/Iphone.png" width="346" height="548" alt="iphone" title="iphone">
                 <div class="iphone_content">
                     <img id="slider-1" class="slider-active" src="img/Iphone/Слайд_1.png" alt="">
                     <img id="slider-2" src="img/Iphone/Слайд_2.png" alt="">
@@ -42,7 +55,7 @@
                     <span id="dot-1" class="dot dot-active"></span>
                     <span id="dot-2" class="dot"></span>
                     <span id="dot-3" class="dot"></span>
-                </div>
+                </div>-->
             </div>
 
             <div class="offer_content col col-lg-8 as-start">
@@ -52,34 +65,34 @@
 
                 <div class="row">
                     <div class="col col-lg-9">
-                        <div class="offer_label">Полный контроль над крупным бизнесом через <br>простые картинки из любой точки мира</div>
+                        <div class="offer_label"><p>Полный контроль над крупным бизнесом через <br>простые картинки из любой точки мира</p></div>
                         <button class="button-orange">подключайтесь к нам!</button>
                     </div>
                     <div class="col col-lg-3">
                         <div class="circle-orange">
-                            Без лишней работы для сотрудников!
+                            <p>Без лишней работы для сотрудников!</p>
                         </div>
                     </div>
                 </div>
 
 
-                <div class="offer_label_2">наши клиенты:</div>
+                <div class="offer_label_2"><p>наши клиенты:</p></div>
                 <div class="clients">
-                    <img src="img/Clients/Dior.png" alt="Dior">
-                    <img class="as-end" src="img/Clients/Dyson.png" alt="Dyson">
-                    <img class="as-end" src="img/Clients/Bayer.png" alt="Bayer">
-                    <img src="img/Clients/Swatch.png" alt="Swatch">
-                    <img src="img/Clients/Abuv.png" alt="Abuv">
-                    <img src="img/Clients/Sportland.png" alt="Sportland">
+                    <div><img src="img/Clients/Dior.png" alt="Dior"></div>
+                    <div class="as-end"><img src="img/Clients/Dyson.png" alt="Dyson"></div>
+                    <div class="as-end"><img src="img/Clients/Bayer.png" alt="Bayer"></div>
+                    <div><img src="img/Clients/Swatch.png" alt="Swatch"></div>
+                    <div><img src="img/Clients/Abuv.png" alt="Abuv"></div>
+                    <div><img src="img/Clients/Sportland.png" alt="Sportland"></div>
                 </div>
                 <!---->
             </div>
         </div>
         
     </div>
-</div>
+</section>
 
-    <div class="services container">
+    <section class="services container">
         <div class="services_block row">
             <div class="services_block_left col col-lg-1 ai-center">
                 <div class="day">30</div>
@@ -88,10 +101,10 @@
             <div class="col col-lg-1"></div>       
             <div class="services_block_right col col-lg-10">
                 <div class="services_block_header"><h2>Сегодня <span class="text-green">тот самый день,</span> когда стоит отправить заявку на демонстрацию нашей системы</h2></div>
-                <div class="services_block_label">Потому что Вы поймете ценность нашего подхода и <span class="text-orange">уже через 2 месяца</span> будете управлять Вашим бизнесом на основе KPI</div>
+                <div class="services_block_label"><p>Потому что Вы поймете ценность нашего подхода и <span class="text-orange">уже через 2 месяца</span> будете управлять Вашим бизнесом на основе KPI</p></div>
                 <div class="services_form">
                     <div class="form_caption">
-                        Запишитесь на презентацию <span class="text-green">прямо сейчас!</span>
+                        <p>Запишитесь на презентацию <span class="text-green">прямо сейчас!</span></p>
                     </div>
                     <form class="form" action="index.html" method="POST">
                         <input type="text" placeholder="Как к Вам обращаться?">
@@ -110,7 +123,7 @@
             <div class="col col-lg-1"></div>       
             <div class="services_block_right col col-lg-10">
                 <div class="services_block_header"><h2>Определим <span class="text-green">приоритетные цели</span> развития бизнеса<br> (стратегию развития)</h2></div>
-                <div class="services_block_label">Вы получите визуальную карту достижения целей и стратегий компании</div>
+                <div class="services_block_label"><p>Вы получите визуальную карту достижения целей и стратегий компании</p></div>
             </div>
         </div>
 
@@ -122,7 +135,7 @@
             <div class="col col-lg-1"></div>       
             <div class="services_block_right col col-lg-10">
                 <div class="services_block_header"><h2>Произведем <span class="text-green">декомпозицию целей</span> до ключевых показателей эффективности KPI</h2></div>
-                <div class="services_block_label">Вы получите:</div>
+                <div class="services_block_label"><p>Вы получите:</p></div>
                 <ul class="get list-unstyle">
                     <li>Список ответственных по KPI для каждой цели</li>
                     <li>Список KPI для каждой цели компании</li>
@@ -138,7 +151,7 @@
             <div class="col col-lg-1"></div>       
             <div class="services_block_right col col-lg-10">
                 <div class="services_block_header"><h2>Будет готов поэтапный <span class="text-green">план достижения целей</span> Вашей компании</h2></div>
-                <div class="services_block_label">Вы получите:</div>
+                <div class="services_block_label"><p>Вы получите:</p></div>
                 <ul class="get list-unstyle">
                     <li>Список мероприятий для достижения цели</li>
                     <li>План-график по достижению Ваших целей</li>
@@ -156,32 +169,44 @@
             <div class="col col-lg-1"></div>       
             <div class="services_block_right col col-lg-10">
                 <div class="services_block_header"><h2>День <span class="text-green">полного контроля</span> Вашей розничной сетью <br>при помощи KPI</h2></div>
-                <div class="services_block_label">Вы получите:</div>
+                <div class="services_block_label"><p>Вы получите:</p></div>
                 <ul class="get list-unstyle">
                     <li>Инструмент оперативного  принятия решений для взрывного роста бизнеса</li>
                     <li>Визуальный контроль выполнения целей</li>
                     <li>Снижение расходов</li>
                 </ul>
-                <div class="services_block_label_2">И еще ряд преимуществ, которые мы Вам и покажем в Вашем офисе в момент презентации системы.</div>
+                <div class="services_block_label_2"><p>И еще ряд преимуществ, которые мы Вам и покажем в Вашем офисе в момент презентации системы.</p></div>
                 <button class="button-orange">выбрать день встречи</button>
                 <p class="time">Нам потребуется не более 27 минут Вашего времени</p>
             </div>
         </div>
-</div>
+</section>
     
 
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript">
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">     
     $(document).ready(function(){
-        $('.dot').click(function(){
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true
+        });
+
+
+        /*$('.dot').click(function(){
             var id = $(this).attr('id').slice(4);            
             $('.dot').removeClass('dot-active');
             $(this).addClass('dot-active');
             $('.slider-active').removeClass('slider-active');
             $('#slider-' + id).addClass('slider-active');          
-        });
+        });*/
     });
 </script>
 </body>
