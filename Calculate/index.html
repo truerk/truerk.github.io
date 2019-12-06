@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>new project</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">    
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
+<body>
+
+    <div id="calculate">
+        <div class="calculate-body">
+            <h2>Кредитный калькулятор</h2>
+            <div id="credit">
+                <p class="group-title">Кредитная комания</p>
+                <div class="group-button">
+                    <button class="credit-button active">InCredit</button>
+                    <button class="credit-button">Lateko</button>
+                </div>            
+                <input type="radio" name="creditLine" value="InCredit" class="hidden">
+                <input type="radio" name="creditLine" value="Lateko" class="hidden">
+            </div>
+            <div id="deposit">
+                <p class="group-title">Первоначальный взнос</p>
+                <div class="scroll-group"> 
+                    <input type="text" name="deposit" id="depositValue" class="scroll-value" value="99%" inputmode="numeric">               
+                    <div class="scroll-bar" id="scrollDeposit">                    
+                        <span class="value-start">10%</span>
+                        <span class="value-now"></span>
+                        <span class="value-end">90%</span>  
+                        <input type="range" step="1" min="10" max="90" class="scroll-slider">
+                        <div class="scroll-fill-before"></div>
+                        <div class="scroll-fill-after"></div>
+                    </div>
+                </div>            
+            </div>
+            <div id="date">
+                <p class="group-title">Срок кредита</p>
+                <div class="scroll-group">  
+                    <input type="text" name="date" class="scroll-value" id="dateValue" value="99 мес." inputmode="numeric">              
+                    <div class="scroll-bar" id="scrollCreditDate">                    
+                        <span class="value-start">1 Месяц</span>
+                        <span class="value-now">10%</span>
+                        <span class="value-end">36 месяцев</span>                        
+                        <div class="scroll-fill-before"></div>
+                        <div class="scroll-fill-after"></div>
+                        <input type="range" min="1" max="36" step="1" class="scroll-slider">
+                    </div>
+                </div>
+            </div>
+            <div id="pay-info">
+                <div class="pay-block">
+                    <p class="group-title">Ежемесячная плата:</p>
+                    <div class="pay-text">
+                        <div id="monthly-pay">0 000 000 Р</div>
+                    </div>
+                </div>
+                <div class="pay-block">
+                    <p class="group-title">Процентная ставка:</p>
+                    <div class="pay-text">
+                        <div id="bet-pay">100,00%</div>
+                        <div class="pay-prefix"> годовых</div>
+                    </div>
+                </div>
+            </div>  
+            <p class="text-info">При оформлении заказов на сумму более 1400 евро первоначальный взнос является обязательным и состовляет 10% от суммы покупки.</p>
+        </div>
+
+        <div id="total">
+            <div class="accordion" id="accordion-calculate">
+                <div class="header accordion-header">
+                    <p class="group-title">Репрезентативный пример:</p>
+                    <div class="accordion-button" data-status-accordion="close"></div>
+                </div>
+                <div class="accordion-body">
+                    <div class="detail-block">
+                        <div class="detail-name">Годовая ставка по займу</div>
+                        <div class="detail-info" id=""></div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">ГПС</div>
+                        <div class="detail-info" id="">21.94%</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Годовая ставка по займу</div>
+                        <div class="detail-info" id="">180.48%</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Сумма займа</div>
+                        <div class="detail-info" id="">6 057 Р</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Плата за контроль</div>
+                        <div class="detail-info" id="">1.67%</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Срок кредита</div>
+                        <div class="detail-info" id="">6 мес.</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Цена товара</div>
+                        <div class="detail-info" id="">6 057 Р</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Первый взнос</div>
+                        <div class="detail-info" id="">1 211 Р</div>
+                    </div>
+                    <div class="detail-block">
+                        <div class="detail-name">Ежемесяный платеж</div>
+                        <div class="detail-info" id="">274 Р</div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-total">
+                <p>Общая сумма к оплате</p>
+                <div id="totalAmount">9 848 Р</div>
+            </div>            
+        </div>
+
+        <p class="text-info">Кредитный калькулятор носит информативный характер и дает представление лишь о примерном объеме выплат по кредиту. Бери кредит ответственно и оценивай свои возможности возврата.</p>
+
+    </div>
+
+    
+   
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>

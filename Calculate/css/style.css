@@ -1,0 +1,352 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #404040;
+  font-family: 'Segoe UI', sans-serif, Arial, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h1,
+.h2 {
+  font-size: 2rem;
+}
+
+h1,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h1,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h1,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h1,
+.h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-family: inherit;
+  line-height: 1.2;
+  color: inherit;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  font-size: inherit;
+  font-weight: 300;
+}
+
+.mark,
+mark {
+  padding: 0.1em;
+  background-color: #FAFAC8;
+}
+
+abbr {
+  cursor: help;
+  font-size: 0.9rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td,
+th {
+  padding: 0.5rem;
+}
+
+table th {
+  color: #343434;
+  background-color: #E6EBF0;
+  border-color: #DCEBF0;
+}
+
+td,
+th {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+#calculate {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 500px;
+}
+
+#calculate .calculate-body {
+  padding-right: 15%;
+}
+
+#calculate h2 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+#calculate .group-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#calculate .hidden {
+  display: none;
+}
+
+#calculate #credit {
+  margin-top: 30px;
+}
+
+#calculate .group-button {
+  display: flex;
+}
+
+#calculate .credit-button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  padding: 10px 0;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 3px solid #cecece;
+}
+
+#calculate .credit-button.active {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid #E31E24;
+}
+
+#calculate .text-info {
+  color: #999999;
+}
+
+#calculate .scroll-group {
+  display: flex;
+  align-items: center;
+}
+
+#calculate .scroll-group .scroll-value {
+  width: 20%;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  height: 50px;
+  outline: none;
+}
+
+#calculate .scroll-group .scroll-bar {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  border-radius: 5px;
+}
+
+#calculate .scroll-group .scroll-bar .scroll-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+  background-color: transparent;
+  outline: none;
+}
+
+#calculate .scroll-group .scroll-bar .scroll-slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #E31E24;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  box-shadow: ;
+  cursor: pointer;
+}
+
+#calculate .scroll-group .scroll-bar .scroll-slider::-moz-range-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #E31E24;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#calculate .scroll-group .scroll-bar .scroll-fill-before {
+  position: absolute;
+  width: 0%;
+  left: 0;
+  height: 100%;
+  background-color: #E31E24;
+}
+
+#calculate .scroll-group .scroll-bar .scroll-fill-after {
+  position: absolute;
+  width: 0%;
+  right: 0;
+  height: 100%;
+  background-color: #cecece;
+}
+
+#calculate .scroll-group .scroll-bar .value-start,
+#calculate .scroll-group .scroll-bar .value-end,
+#calculate .scroll-group .scroll-bar .value-now {
+  color: #999999;
+  font-size: 12px;
+  position: absolute;
+  top: -25px;
+}
+
+#calculate .scroll-group .scroll-bar .value-start {
+  left: 0;
+}
+
+#calculate .scroll-group .scroll-bar .value-end {
+  right: 0;
+}
+
+#calculate .scroll-group .scroll-bar .value-now {
+  left: 0;
+  top: -35px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: max-content;
+  height: max-content;
+}
+
+#calculate #pay-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#calculate #pay-info .pay-block {
+  flex-grow: 1;
+  text-align: left;
+  flex-basis: 160px;
+}
+
+#calculate #pay-info .pay-block .pay-text {
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#calculate #pay-info .pay-block .pay-text .pay-prefix {
+  font-size: 16px;
+  font-weight: 400;
+  align-self: flex-end;
+  margin-left: 5px;
+  margin-bottom: 3px;
+}
+
+#calculate #total {
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  padding: 20px;
+}
+
+#calculate #total .detail-block {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+#calculate #total .detail-name {
+  flex-grow: 1;
+}
+
+#calculate #total .detail-total {
+  display: flex;
+  align-items: center;
+}
+
+#calculate #total .detail-total p {
+  flex-grow: 1;
+}
+
+#calculate #total .detail-total #totalAmount {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+#calculate .accordion .accordion-header {
+  position: relative;
+  padding-right: 15px;
+}
+
+#calculate .accordion .accordion-body {
+  color: #000;
+  min-height: 500px;
+}
+
+#calculate .accordion .accordion-button {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  background: url('../img/ui/arrow--default.svg') no-repeat 50%;
+  transform: rotate(90deg);
+  background-size: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+#calculate .accordion .accordion-button.active {
+  transform: rotate(-90deg);
+}
