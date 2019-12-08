@@ -210,10 +210,10 @@ th {
   appearance: none;
   -webkit-appearance: none;
   background-color: #E31E24;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  box-shadow: ;
+  box-shadow: 0 0 1px 1px #fff;
   cursor: pointer;
 }
 
@@ -221,9 +221,10 @@ th {
   appearance: none;
   -webkit-appearance: none;
   background-color: #E31E24;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
+  box-shadow: 0 0 1px 1px #fff;
   cursor: pointer;
 }
 
