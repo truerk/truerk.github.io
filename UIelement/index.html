@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ui markup</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="favicon.ico" rel="shortcut icon">    
+    <link rel="stylesheet" type="text/css" href="css/libs.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>
+<body>
+
+    <div class="menu">
+        <div class="menu__nav">
+            <div class="nav__header icon icon__profile"><a href="#Profile">Profile</a></div>            
+        </div>
+        <div class="menu__nav">
+            <div class="nav__header icon icon__messages" data-accordion-button><a href="#Messages">Messages</a><span class="mark-counter">12</span></div>
+            <div class="nav__submenu" data-accordion-body>
+                <ul class="submenu">
+                    <li class="submenu__nav"><a href="#Inbox">Inbox</a></li>
+                    <li class="submenu__nav"><a href="#Sent">Sent</a></li>
+                    <li class="submenu__nav"><a href="#Drafts">Drafts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu__nav">
+            <div class="nav__header icon icon__settings"><a href="#Settings">Settings</a></div>
+        </div>
+        <div class="menu__nav">
+            <div class="nav__header  icon icon__logout"><a href="#Logout">Logout</a></div>
+        </div>
+    </div>
+   
+
+    <script src="js/common.js"></script>
+</body>
+</html>
