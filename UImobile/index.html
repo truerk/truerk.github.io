@@ -13,9 +13,16 @@
 </head>
 <body>
 
-    <div class="menu">
+<div class="mobile-container">
+    <div id="menu" class="menu">
         <div class="menu__nav">
-            <div class="nav__header icon icon__profile"><a href="#Profile">Profile</a></div>            
+            <div class="nav__header icon icon__profile" data-accordion-button><a href="#Profile">Profile</a></div>  
+            <div class="nav__submenu" data-accordion-body>
+                <ul class="submenu">
+                    <li class="submenu__nav"><a href="#Inbox">Settings</a></li>
+                    <li class="submenu__nav"><a href="#Sent">Messages</a></li>
+                </ul>
+            </div>          
         </div>
         <div class="menu__nav">
             <div class="nav__header icon icon__messages" data-accordion-button><a href="#Messages">Messages</a><span class="mark-counter">12</span></div>
@@ -34,7 +41,12 @@
             <div class="nav__header  icon icon__logout"><a href="#Logout">Logout</a></div>
         </div>
     </div>
-   
+</div>   
+
+
+
+
+
 
     <script src="js/common.js"></script>
 </body>

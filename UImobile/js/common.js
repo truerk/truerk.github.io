@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            var timeOut = 0.5;
+            var timeOut = 0.3;
             accordionBody.style.minHeight = '0';
             accordionBody.style.transition = 'max-height ' + timeOut + 's ease';
             accordionBody.style.maxHeight = '0';
@@ -34,4 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     var menuNav = new accordion('.menu__nav');
+
+
+
+    
 });
