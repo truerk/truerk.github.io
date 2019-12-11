@@ -156,8 +156,6 @@ body {
 .mobile-container {
   width: 100%;
   height: 100%;
-  max-height: 850px;
-  max-width: 450px;
   overflow: hidden;
   overflow-y: auto;
   display: flex;
@@ -167,7 +165,6 @@ body {
   padding: 5px;
   position: relative;
   background: #fff url(../img/background.png);
-  margin: auto;
 }
 
 .menu {
@@ -347,14 +344,4 @@ body {
   transition: background-color 0.2s ease;
   border-radius: 3px;
   font-weight: 500;
-}
-
-@media (orientation: landscape) {
-  .mobile-container {
-    max-height: 450px;
-    max-width: 850px;
-    background: #fff url(https://i.gifer.com/v3w.gif);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-  }
 }
