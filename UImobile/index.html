@@ -14,8 +14,8 @@
 <body>
 
 <div class="mobile-container">
-    <div id="menu" class="menu">
-        <div class="menu__nav">
+    <div class="menu">
+        <div class="menu__nav" data-accordion data-submenu>
             <div class="nav__header icon icon__profile" data-accordion-button><a href="#Profile">Profile</a></div>  
             <div class="nav__submenu" data-accordion-body>
                 <ul class="submenu">
@@ -24,7 +24,7 @@
                 </ul>
             </div>          
         </div>
-        <div class="menu__nav">
+        <div class="menu__nav" data-accordion>
             <div class="nav__header icon icon__messages" data-accordion-button><a href="#Messages">Messages</a><span class="mark-counter">12</span></div>
             <div class="nav__submenu" data-accordion-body>
                 <ul class="submenu">
@@ -41,9 +41,139 @@
             <div class="nav__header  icon icon__logout"><a href="#Logout">Logout</a></div>
         </div>
     </div>
+
+    <div class="dark_gold_theme">
+        <h2>FREE Dark gold UI Kit</h2>
+        
+        <div class="group buttons">
+            <div class="group__column">
+                <div class="group__row"><button class="btn btn__dark" style="background-color: #242323;">Button</button></div>
+                <div class="group__row"><button class="btn btn__dark">Button</button></div>
+                <div class="group__row"><button class="btn btn__dark" style="background-color: #302e2e;box-shadow: inset 0 0px 6px 3px #171515;">Button</button></div>                
+            </div>
+            <div class="group__column">
+                <div class="group__row"><button class="btn btn__yellow btn__arrow" style="background-color: #e3b949;">Button</button></div>
+                <div class="group__row"><button class="btn btn__yellow btn__arrow">Button</button></div>
+                <div class="group__row"><button class="btn btn__yellow btn__arrow" style="box-shadow: inset 0 1.5px 8px 0px #171515;">Button</button></div></div>
+            <div class="group__column">
+                    <div class="group__row"><label>Hover</label></div>
+                    <div class="group__row"><label>Normal</label></div>
+                    <div class="group__row"><label>Active</label></div>
+                
+                
+                
+            </div>
+        </div>
+
+        <div class="group inputs">
+            <div class="group__column">
+                <div class="group__row"><input type="search" class="input input__dark input__search" placeholder="Search"></div>
+                <div class="group__row"><input type="text" class="input input__dark" placeholder="Input"></div>
+                <div class="group__row"><input type="text" class="input input__dark" placeholder="Input"></div>
+            </div>
+            <div class="group__column">
+                <label>focus</label>
+            </div>
+        </div>
+
+        <div class="group selects">
+            <div class="group__column">
+                <select name="" id="" class="select select__dark">
+                    <option value="Pixel">Pixel</option>
+                    <option value="Fabric">Fabric</option>
+                    <option value="Freebies">Freebies</option>
+                </select>
+            </div>
+            <div class="group__column">
+                <div class="select select__dark" data-name="">
+                    <div class="select__header" data-header></div>
+                    <div class="select__options" data-options>
+                        <div class="select__option" value="Pixel" data-option data-option-default>Pixel</div>
+                        <div class="select__option" value="Fabric" data-option>Fabric</div>
+                        <div class="select__option" value="Freebies" data-option>Freebies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group scrolls">
+            <div class="group__column">
+                <div class="scroll">
+                    <div class='scroll__fill-before' data-fill-before></div>
+                    <div class='scroll__fill-after' data-fill-after></div>
+                    <input type='range' class='scroll__slider' data-slider>
+                </div>
+                <div class="scroll scroll__big">
+                        <div class='scroll__fill-before' data-fill-before></div>
+                        <div class='scroll__fill-after' data-fill-after></div>
+                        <input type='range' class='scroll__slider' data-slider>
+                    </div>
+                <div class="scroll scroll__small">
+                    <div class='scroll__fill-before' data-fill-before></div>
+                    <div class='scroll__fill-after' data-fill-after></div>
+                    <input type='range' class='scroll__slider scroll__slider-square' data-slider>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkboxes">
+            <div class="group">
+                <label class="checkbox">
+                    <input type="checkbox">
+                    <div class="checkbox__text">Я переключаю чекбокс</div>
+                </label>  
+            </div>
+            <div class="group">               
+                <div class="group__column">
+                    <label class="checkbox checkbox__switch">
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="group__column">
+                    <label class="checkbox checkbox__switch">
+                        <input type="checkbox" checked>
+                    </label>
+                </div>
+            </div>
+            <div class="group">               
+                <div class="group__column">
+                    <label class="checkbox checkbox__square">
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="group__column">
+                    <label class="checkbox checkbox__square">
+                        <input type="checkbox" checked>
+                    </label>
+                </div>
+            </div>
+            <div class="group">               
+                <div class="group__column">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <div class="group__column">
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="group nav">
+            <ul class="pagination">
+                <li class="pagination__button">prev</li>
+                <li class="pagination__button">1</li>
+                <li class="pagination__button">2</li>
+                <li class="pagination__button">3</li>
+                <li class="pagination__button">4</li>
+                <li class="pagination__button">10</li>
+                <li class="pagination__button">next</li>
+            </ul>
+        </div>
+    </div>
 </div>   
-
-
 
 
 

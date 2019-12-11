@@ -118,12 +118,15 @@ th {
   border-bottom: 1px solid #dee2e6;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: #d3a97e;
+  height: 100%;
+  width: 100%;
 }
 
 .icon::before {
@@ -163,9 +166,8 @@ body {
   justify-content: flex-start;
   padding: 5px;
   position: relative;
-  background: #fff url(https://i.gifer.com/v3w.gif);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background: #fff url(../img/background.png);
+  margin: auto;
 }
 
 .menu {
@@ -181,6 +183,7 @@ body {
   color: #AABBCD;
   margin: 1px;
   cursor: pointer;
+  position: relative;
 }
 
 .menu .nav__header {
@@ -245,6 +248,105 @@ body {
   box-shadow: 0px 1px 3px 0px #1B2026;
   position: absolute;
   right: 10px;
+}
+
+.dark_gold_theme {
+  margin: 30px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.dark_gold_theme h2 {
+  color: #d8be6e;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.dark_gold_theme .group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.dark_gold_theme .group__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.dark_gold_theme .group__row {
+  margin: 5px;
+}
+
+.dark_gold_theme .btn {
+  font-size: 14px;
+  padding: 12px 50px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  border: 1px solid #cecece;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.dark_gold_theme .btn:hover {
+  background-color: #cecece;
+}
+
+.dark_gold_theme .btn:active {
+  background-color: #fff;
+  box-shadow: inset 0 0 5px 0 #cecece;
+}
+
+.dark_gold_theme .btn.btn__dark {
+  color: #ebebeb;
+  background-color: #302e2e;
+  border: none;
+  border-top: 0.5px solid #363535;
+  box-shadow: 0 0 1px 1px #171515;
+}
+
+.dark_gold_theme .btn.btn__dark:hover {
+  background-color: #242323;
+}
+
+.dark_gold_theme .btn.btn__dark:active {
+  background-color: #302e2e;
+  box-shadow: inset 0 0px 6px 3px #171515;
+  border-top: 0.5px solid #171515;
+}
+
+.dark_gold_theme .btn.btn__yellow {
+  color: #242323;
+  background-color: #ffc427;
+  border: none;
+  box-shadow: 0 0 1px 0 #171515;
+}
+
+.dark_gold_theme .btn.btn__yellow:hover {
+  background-color: #e3b949;
+}
+
+.dark_gold_theme .btn.btn__yellow:active {
+  box-shadow: inset 0 1.5px 8px 0px #171515;
+}
+
+.dark_gold_theme .input {
+  font-size: 12px;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  line-height: 1;
+  border: 1px solid #cecece;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  border-radius: 3px;
+  font-weight: 500;
 }
 
 @media (orientation: landscape) {
