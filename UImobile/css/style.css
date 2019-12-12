@@ -156,9 +156,8 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 5px;
-  position: relative;
   background: #fff url(../img/background.png);
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
