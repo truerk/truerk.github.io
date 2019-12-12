@@ -120,6 +120,7 @@ th {
 
 body {
   background: #000 url(../img/background.png);
+  height: 100vh;
 }
 
 .icon::before {
@@ -160,6 +161,10 @@ body {
   position: relative;
   background: #fff url(../img/background.png);
   margin: auto;
+}
+
+.pr-45 {
+  padding-right: 45px!important;
 }
 
 .menu {
@@ -243,7 +248,7 @@ body {
 }
 
 .dark_gold_theme {
-  margin: 30px 0;
+  margin: 30px 0 45px;
   text-align: center;
   width: 100%;
 }
@@ -258,6 +263,7 @@ body {
 .dark_gold_theme .group {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .dark_gold_theme .group__column {
@@ -283,6 +289,21 @@ body {
   transition: background-color 0.2s ease;
   border-radius: 3px;
   font-weight: 500;
+  position: relative;
+  width: 100%;
+}
+
+.dark_gold_theme .btn.btn__arrow::after {
+  content: '';
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 4px);
 }
 
 .dark_gold_theme .btn:hover {
@@ -327,9 +348,13 @@ body {
   box-shadow: inset 0 1.5px 8px 0px #171515;
 }
 
+.dark_gold_theme .input-group {
+  position: relative;
+}
+
 .dark_gold_theme .input {
   font-size: 12px;
-  padding: 6px 12px;
+  padding: 8px 12px;
   outline: none;
   border: none;
   background-color: #fff;
@@ -339,6 +364,39 @@ body {
   transition: background-color 0.2s ease;
   border-radius: 3px;
   font-weight: 500;
+  color: #171515;
+  position: relative;
+  width: 100%;
+}
+
+.dark_gold_theme .input.input__dark {
+  border: 1px solid #202020;
+  background-color: #282727;
+  color: #ebebeb;
+}
+
+.dark_gold_theme .input__button {
+  position: absolute;
+  background-color: #fff;
+  display: block;
+  width: 40px;
+  height: calc(100% - 2px);
+  right: 0;
+  top: 1px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-left: 1px solid #cecece;
+}
+
+.dark_gold_theme .input__button__dark {
+  box-shadow: inset 1px 0px 0px 0px #3736367c;
+  border-left: 1px solid #202020;
+  background-color: #282727;
+}
+
+.dark_gold_theme .input__button__search {
+  background: transparent url(../img/gold_theme/search__dark.png) no-repeat 48%;
 }
 
 @media (orientation: landscape) {
