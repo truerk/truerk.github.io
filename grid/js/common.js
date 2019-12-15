@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
     function accordion(accordions, time = 0.5) {        
         document.querySelectorAll(accordions).forEach(accordionParams);
 
-        function accordionParams(accordion) {            
+        function accordionParams(accordion) {               
             var accordionControl = accordion.firstElementChild || null;
             var accordionBody = accordion.lastElementChild || null;
             var accordionMain = accordionBody.closest(accordions);
