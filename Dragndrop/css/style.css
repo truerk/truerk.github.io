@@ -1,0 +1,100 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+  color: #404040;
+  font-family: 'Segoe UI', sans-serif, Arial, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+body {
+  background: #ececec;
+}
+
+.container {
+  text-align: center;
+}
+
+.timeline {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.time {
+  background: #fff;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dragElement {
+  width: 30px;
+  height: 30px;
+  background: #9b6872;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.timeline.auto {
+  text-align: center;
+}
+
+.timeline.auto .time {
+  height: 50px;
+  width: 50px;
+}
+
+.timeline.auto .dragElement {
+  width: 10px;
+  height: 10px;
+}
+
+.button-start {
+  background: #fff;
+  width: 100px;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px auto;
+  outline: none;
+}
