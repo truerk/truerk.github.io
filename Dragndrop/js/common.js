@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function dropContainer(event) {
         event.stopPropagation();
 
-        this.appendChild(dragged);
-        
+        this.appendChild(dragged);        
         console.log('drop: ' + this.getAttribute('data-timeline-second'));      
     }    
 
@@ -68,7 +67,51 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('start: ' + time.getAttribute('data-timeline-second'));
     });
 
-});
+    function waitFunc (source, callback, options = {count: 5, time: 1000}) {
+        var counter = options.count;
+        var time = options.time;
 
-//event.dataTransfer.setData('idElement', this);
-//this.nextElementSibling.appendChild(dragged);
+        (function check() {
+            var result = source();
+
+            if (result) {
+                callback(result);
+                return;
+            }
+
+            if (counter == 0) {                
+                console.log('timeout');
+                return;
+            }
+
+            console.log('counter: ' + counter);            
+            counter -= 1;  
+            setTimeout(check, time);           
+        }());
+    };
+
+    waitFunc(
+        function () {
+            var buttonStart = document.querySelector('.button-start');
+            var container = buttonStart.closest('.container');
+            var timeline = container.querySelector('.auto');
+            var dragElement = container.querySelector('.dragElement');
+            var time = dragElement.parentNode;
+            time = dragElement.parentNode;
+
+            if (time.nextElementSibling) {
+                time.nextElementSibling.appendChild(dragElement);
+            } else {
+                timeline.firstElementChild.appendChild(dragElement);
+                return true;
+            }
+        },
+        function () {
+            console.log('true');
+        },
+        {
+            count: 20,
+            time: 100
+        }
+    );
+});

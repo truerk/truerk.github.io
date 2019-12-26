@@ -1,0 +1,24 @@
+@import (reference) "_var.less";
+// ============================
+// Настройки страницы
+// ============================
+
+*,::after,::before{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;   
+}
+
+body{
+   background: @color-main;
+   color: @color-text-main;
+   font-family: @font-main, @font-second;
+   -webkit-font-smoothing: subpixel-antialiased !important;
+   -webkit-backface-visibility: hidden;
+   -moz-backface-visibility:    hidden;
+   -ms-backface-visibility:     hidden;
+   font-size: 16px; 
+   font-weight: 400;
+   line-height: 1.5;
+   text-align: left;         
+}

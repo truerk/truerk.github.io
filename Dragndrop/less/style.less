@@ -1,0 +1,58 @@
+@import (reference) "_grid.less";
+@import "_page.less";
+
+body{
+    background: #ececec;
+}
+.container {
+    text-align: center;
+}
+
+.timeline{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.time{
+    background: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragElement {
+    width: 30px;
+    height: 30px;
+    background: rgb(155, 104, 114);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.timeline.auto{
+    text-align: center;
+    .time{height: 50px;width: 50px;}
+
+    .dragElement {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.button-start {
+    background: #fff;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px auto;
+    outline: none;
+}
