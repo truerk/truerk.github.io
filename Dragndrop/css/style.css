@@ -98,3 +98,25 @@ body {
   margin: 5px auto;
   outline: none;
 }
+
+h2 {
+  padding: 0 50px;
+}
+
+/* ====================== dragJS ================= */
+
+.dragElementJs {
+  width: 30px;
+  height: 30px;
+  background: #9b6872;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dragElementJs[data-dragged=true] {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
