@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bundles/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="favicon.ico" rel="icon" type="image/ico"/>
+    <title>РеталСервис</title>
+</head>
+
+<body>
+
+    <header am-wrapper="header">
+        <div am-container="menu" class="menu">
+            <div am-grid="container" spacing="2" justify="space-between" align-items="center">
+                <div am-grid="item" elg="3" sm="10">
+                    <span am-icon="logo" am-logo>
+                        <span am-logo-text>РеталСервис</span>
+                    </span>
+                </div>
+                <div am-grid="item" elg="9" lg="6" hidden-md>
+                    <div am-content="menu" direction='row' align-items='center' justify="end">
+                        <a class="menu__item" href="tel:78482362020"><span am-icon="icon_phone"></span>+7 (8482) 36-20-20</a>
+                        <a class="menu__item" href="mailto:78482362020"><span am-icon="icon_mail"></span>info@retalrf.ru</a>
+                        <a class="menu__item" target="_blank" href="https://yandex.ru/maps/240/togliatti/house/ulitsa_dzerzhinskogo_98/YEAYdAFlQEUGQFtpfXlyeHhrYA==/?ll=49.265901%2C53.539484&z=17.17"><span am-icon="icon_place_mini"></span>г. Тольятти, ул. Дзержинского, д. 98, оф. 90</a>
+                    </div>
+                </div>
+                <div am-grid="item" elg="2" hidden visible-md>
+                    <div am-content="mobile-menu" align-items='end'>
+                        <div am-burger-button="menu">
+                            <div am-burger-line></div>
+                            <div am-burger-line></div>
+                            <div am-burger-line></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div am-content="menu__mobile" class="menu__mobile" hidden visible-md="block">
+            <div am-container="menu__mobile">
+                <ul class="menu__mobile-items">
+                    <li class="menu__mobile-item" menu-target="services">Наши услуги</li>
+                    <li class="menu__mobile-item" menu-target="foryou">Мы для вас</li>
+                    <li class="menu__mobile-item" menu-target="trust">Нам доверяют</li>
+                    <li class="menu__mobile-item" menu-target="about">О компании</li>
+                    <li class="menu__mobile-item" menu-target="works">Мы работаем с проверенными брендами</li>
+                    <li class="menu__mobile-item" menu-target="map">Контакты</li>
+                </ul>
+                <address class="menu__mobile-adress">
+                    <div am-icon-group>
+                        <span am-icon="icon_place_mini"></span>
+                        <p>ул. Дзержинского, д. 98, оф. 90 cежедневно с 8:00 до 17:00</p>
+                    </div>
+                    <div am-icon-group>
+                        <span am-icon="icon_phone"></span>
+                        <a href="tel:78482362020">+7 (8482) 36-20-20</a>
+                    </div>
+                    <div am-icon-group>
+                        <span am-icon="icon_mail"></span>
+                        <a href="mailto:info@retalrf.ru">info@retalrf.ru</a>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </header>
+
+    <main am-wrapper="content">
+        <section class="subheader">
+            <div am-container="subheader">
+                <div am-grid="container" spacing="1">
+                    <div am-grid="item" elg="6" sm='12'>
+                        <div am-content="subheader__left" class="subheader__left" justify='center'>
+                            <h1 class="subheader__title">Обслуживание <span class="color-second">офисной</span> техники</h1>
+                            <div am-icon-group direction="row">
+                                <div am-icon-circle='small'><span am-icon="icon_refill"></span></div>
+                                <p>Заправка, восстановление и продажа картриджей</p>
+                            </div>
+                            <div am-icon-group direction="row">
+                                <div am-icon-circle='small'><span am-icon="icon_repairs"></span></div>
+                                <p>Техническое обслуживание и ремонт оргтехники</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div am-grid="item" elg="6" sm='12' hidden-sm>
+                        <div am-content="subheader__right" class="subheader__right"  justify='center'>
+                            <img class="subheader__image" load-src data-src="/src/assets/img/section/subheader/cartridge.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div am-content="subheader__image-mobile" class="subheader__image-mobile" hidden visible-sm="flex">
+                <img load-src data-src="/src/assets/img/section/subheader/cartridge.png">
+            </div>
+            <img load-src data-src="/src/assets/img/section/subheader/background_subheader.png" am-section-background>
+        </section>
+
+        <section class="services" id="services">
+            <div am-container="services">
+                <div am-content="services" class="services">
+                    <h2 am-section-header>Наши услуги</h2>
+
+                    <div class="services__cards">
+                        <div am-grid="container" spacing="2">
+                            <div am-grid="item" elg="3" md="6" xs="12">
+                                <div class="services__card">
+                                    <div class="services__card-img">
+                                        <img load-src data-src="/src/assets/img/section/services/refill.png" title="Заправка лазерных картриджей">
+                                    </div>
+                                    <div class="services__card-content">
+                                        <p class="services__card-name">Заправка лазерных картриджей</p>
+                                        <div class="services__card-prices">
+                                            от
+                                            <span class="services__card-price">300 </span>
+                                            <span am-rubl>a</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div am-grid="item" elg="3" md="6" xs="12">
+                                <div class="services__card">
+                                    <div class="services__card-img">
+                                        <img load-src data-src="/src/assets/img/section/services/repairs.png" title="Ремонт всех видов лазерных принтеров, МФУ и копиров">
+                                    </div>
+                                    <div class="services__card-content">
+                                        <p class="services__card-name">Ремонт всех видов лазерных принтеров, МФУ и копиров</p>
+                                        <div class="services__card-prices">
+                                            от
+                                            <span class="services__card-price">600 </span>
+                                            <span am-rubl>a</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div am-grid="item" elg="3" md="6" xs="12">
+                                <div class="services__card">
+                                    <div class="services__card-img">
+                                        <img load-src data-src="/src/assets/img/section/services/recovery.png" title="Восстановление лазерных картриджей">
+                                    </div>
+                                    <div class="services__card-content">
+                                        <p class="services__card-name">Восстановление лазерных картриджей</p>
+                                        <div class="services__card-prices">
+                                            от
+                                            <span class="services__card-price">400 </span>
+                                            <span am-rubl>a</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div am-grid="item" elg="3" md="6" xs="12">
+                                <div class="services__card">
+                                    <div class="services__card-img">
+                                        <img load-src data-src="/src/assets/img/section/services/sale.png" title="Продажа новых расходных материалов для любой оргтехники">
+                                    </div>
+                                    <div class="services__card-content">
+                                        <p class="services__card-name">Продажа новых расходных материалов для любой оргтехники</p>
+                                        <div class="services__card-prices">
+                                            от
+                                            <span class="services__card-price">600 </span>
+                                            <span am-rubl>a</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <figure class="services__freeRide">
+                        <figcaption class="services__freeRide-img">
+                            <img load-src data-src="/src/assets/img/section/services/gazelle.png" title="Бесплатный выезд на территорию клиента">
+                        </figcaption>
+                        <div class="services__freeRide-content">
+                            <h3 class="services__freeRide-title">Бесплатный выезд на территорию клиента</h3>
+                            <p class="services__freeRide-text">В течении суток наш курьер заберет Ваш принтер, мы его починим и привезем Вам обратно</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="foryou" id="foryou">
+            <div am-container="foryou">
+                <div am-content="foryou" class="foryou">
+                    <h2 am-section-header>Мы для Вас</h2>
+
+                    <div class="foryou__services-container" am-grid="container" spacing="2">
+                        <div am-grid="item" elg="4" md="6" xs="12" spacing="4">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/cartridge.png" title="Обслужим любые картриджи для лазерной печати">
+                                </div>
+                                <p class="foryou__block-text">Обслужим любые картриджи для лазерной печати</p>
+                            </div>
+                        </div>
+                        <div am-grid="item" elg="4" md="6" xs="12">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/technics.png" title="Отремонтируем принтеры, МФУ, сканеры, компьютеры и мониторы">
+                                </div>
+                                <p class="foryou__block-text">Отремонтируем принтеры, МФУ, сканеры, компьютеры и мониторы</p>
+                            </div>
+                        </div>
+                        <div am-grid="item" elg="4" md="6" xs="12">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/office_equipment.png" title="Подберем оргтехнику и расходные материалы к ней под Ваши нужды">
+                                </div>
+                                <p class="foryou__block-text">Подберем оргтехнику и расходные материалы к ней под Ваши нужды</p>
+                            </div>
+                        </div>
+                        <div am-grid="item" elg="4" md="6" xs="12">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/work_place.png" title="Подключим и настроим рабочие места у Вас в офисе">
+                                </div>
+                                <p class="foryou__block-text">Подключим и настроим рабочие места у Вас в офисе</p>
+                            </div>
+                        </div>
+                        <div am-grid="item" elg="4" md="6" xs="12">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/drawing.png" title="Спроектируем и проложим СКС у Вас в офисе, магазине или на складе">
+                                </div>
+                                <p class="foryou__block-text">Спроектируем и проложим СКС у Вас в офисе, магазине или на складе</p>
+                            </div>
+                        </div>
+                        <div am-grid="item" elg="4" md="6" xs="12">
+                            <div class="foryou__block" am-icon-group direction="column">
+                                <div am-icon-circle class="foryou__block-img">
+                                    <img load-src data-src="/src/assets/img/section/foryou/CCTV.png" title="Установим систему видеонаблюдения">
+                                </div>
+                                <p class="foryou__block-text">Установим систему видеонаблюдения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img load-src data-src="/src/assets/img/section/foryou/background_foryou.png" am-section-background>
+            <img load-src data-src="/src/assets/img/section/foryou/background_foryou.png" am-section-background hidden visible-md>
+        </section>
+
+        <section class="trust" id="trust">
+            <div am-container="trust">
+                <div am-content="trust" class="trust">
+                    <h2 am-section-header>Мы работаем с проверенными брендами</h2>
+
+                    <div class="carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_adidas.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_detmir.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_dochki.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_ecco.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_kari.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_kfc.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_letual.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_modis.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_modulebank.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_oodji.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_perekrestok.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_rosbank.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_rusfinance.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_sogaz.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_soglasie.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_tatfo.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/company_zetta.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_company/" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"></div>
+                        <div class="swiper-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div am-container="about">
+                <div am-content="about" class="about">
+                    <h2 am-section-header>О компании</h2>
+                    <div class="about__circle">
+                        <div class="about__circle-one">
+                            <div class="about__circle-two">
+                                <div class="about__circle-center">
+                                    <span am-icon="logo_medium" am-logo="bottom">
+                                        <span am-logo-text>РеталСервис</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__circle-label" order="1" hidden-sm>
+                            <div class="about__circle-label-count">400</div>
+                            <div class="about__circle-label-text">АРМ в обслуживании</div>
+                        </div>
+                        <div class="about__circle-label" order="2" hidden-sm>
+                            <div class="about__circle-label-count">1200</div>
+                            <div class="about__circle-label-text">заправок картриджей в месяц</div>
+                        </div>
+                        <div class="about__circle-label" order="3" hidden-sm>
+                            <div class="about__circle-label-count">60</div>
+                            <div class="about__circle-label-text">точек обслуживания по Самарской области</div>
+                        </div>
+                        <div class="about__circle-label" order="4" hidden-sm>
+                            <div class="about__circle-label-count">700</div>
+                            <div class="about__circle-label-text">принтеров и МФУ в обслуживании</div>
+                        </div>
+                        <div class="about__circle-label" order="5" hidden-sm>
+                            <div class="about__circle-label-count">100</div>
+                            <div class="about__circle-label-text">ремонтов оргтехники в месяц</div>
+                        </div>
+                        <div class="about__circle-label" order="6" hidden-sm>
+                            <div class="about__circle-label-count">4</div>
+                            <div class="about__circle-label-text">часа - среднее время реакции</div>
+                        </div>
+                    </div>
+                    <div class="about__labels" hidden visible-sm="flex">
+                        <div class="about__circle-label" order="1">
+                            <div class="about__circle-label-count">400</div>
+                            <div class="about__circle-label-text">АРМ в обслуживании</div>
+                        </div>
+                        <div class="about__circle-label" order="2">
+                            <div class="about__circle-label-count">1200</div>
+                            <div class="about__circle-label-text">заправок картриджей в месяц</div>
+                        </div>
+                        <div class="about__circle-label" order="3">
+                            <div class="about__circle-label-count">60</div>
+                            <div class="about__circle-label-text">точек обслуживания по Самарской области</div>
+                        </div>
+                        <div class="about__circle-label" order="4">
+                            <div class="about__circle-label-count">700</div>
+                            <div class="about__circle-label-text">принтеров и МФУ в обслуживании</div>
+                        </div>
+                        <div class="about__circle-label" order="5">
+                            <div class="about__circle-label-count">100</div>
+                            <div class="about__circle-label-text">ремонтов оргтехники в месяц</div>
+                        </div>
+                        <div class="about__circle-label" order="6">
+                            <div class="about__circle-label-count">4</div>
+                            <div class="about__circle-label-text">часа - среднее время реакции</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works" id="works">
+            <div am-container="works">
+                <div am-content="works" class="works">
+                    <h2 am-section-header>Мы работаем с проверенными брендами</h2>
+
+                    <div class="carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_brother.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_canon.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_epson.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_hp.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_kyocera.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_lexmark.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_panasonic.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_ricoh.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_samsung.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_sharp.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_toshiba.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="carousel__content">
+                                        <img src="/src/assets/img/logo_brand/brand_xerox.png" title="Мы работаем с проверенными брендами">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"></div>
+                        <div class="swiper-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map">
+            <div am-wrapper="map" id="ymaps"></div>
+            <div am-container="map" class="map">
+                <div class="map__block">
+                    <h2 class="map__block-title">Контакты</h2>
+                    <address>
+                        <div am-icon-group>
+                            <div am-icon-circle='mini'><span am-icon="icon_place_mini"></span></div>
+                            <p>ул. Дзержинского, д. 98, оф. 90 cежедневно с 8:00 до 17:00</p>
+                        </div>
+                        <div am-icon-group>
+                            <div am-icon-circle='mini'><span am-icon="icon_phone"></span></div>
+                            <a href="tel:78482362020">+7 (8482) 36-20-20</a>
+                        </div>
+                        <div am-icon-group>
+                            <div am-icon-circle='mini'><span am-icon="icon_mail"></span></div>
+                            <a href="mailto:info@retalrf.ru">info@retalrf.ru</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer am-wrapper="footer">
+        <div am-container="footer" class="footer">
+            <div am-grid="container" spacing="1">
+                <div am-grid="item" elg="3" lg="4" md="12">
+                    <span am-icon="logo" am-logo>
+                        <span am-logo-text>РеталСервис</span>
+                    </span>
+                </div>
+                <div am-grid="item" elg="9" lg="8" md="12">
+                    <div am-content="footer__links" direction="row" justify="space-between" align-items="center">
+                        <div class="footer__link"><a href="#Политика конфиденциальности">Политика конфиденциальности</a></div>
+                        <div class="footer__link"><a href="#Дизайн Алена Маляренко">Дизайн Алена Маляренко</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bundles/index.js"></script>
+    <script src="bundles/vendors.js"></script>
+</body>
+
+</html>
