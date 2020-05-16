@@ -1,0 +1,77 @@
+#map {
+    padding: 0;
+    overflow: visible;
+
+    #ymaps {
+        background-color: $color-gray;
+        height: 500px;
+        width: 100%;
+    }
+
+    @include md() {
+
+        #ymaps {
+            overflow: hidden;
+        }
+    }
+
+    @include sm() {
+        #ymaps {
+            height: 180px;
+        }
+    }
+}
+
+.map {
+
+    &__block {
+        padding: 30px 40px 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        max-width: 400px;
+        position: absolute;
+        right: 5%;
+        top: 90px;
+
+        &-title {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 36px;
+        }
+
+        [am-icon-group] {
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        [am-icon-group] + [am-icon-group] {
+            margin-top: 20px;
+        }
+
+        @include md() {
+            & {
+                position: static;
+                margin: 25px auto;
+                padding: 20px 30px;
+            }
+        }
+
+        @include sm() {
+            &-title {
+                font-size: 30px;
+            }
+
+            [am-icon-group] {
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            [am-icon-group] + [am-icon-group] {
+                margin-top: 15px;
+            }
+        }
+    }
+
+
+}

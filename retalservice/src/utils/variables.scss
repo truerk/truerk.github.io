@@ -1,0 +1,45 @@
+// Container
+$container-width: 1170px;
+$container-width-lg: 960px;
+$container-width-md: 690px;
+$container-width-sm: 100%;
+
+// Grid
+$columns: 12;
+$offset: 15px;
+
+$offset-lg: 15px;
+$offset-md: 15px;
+$offset-sm: 10px;
+
+// Breakpoints
+$lg: 1169px;
+$md: 959px;
+$sm: 689px;
+$xs: 479px;
+
+// Colors
+$color-main: #000000;
+$color-second: #FDD82A;
+$color-gray: #C5C5C5;
+$color-gray-light: #DADADA;
+$color-gray-lighter: #FAFAFA;
+
+// Font
+$font-main: "ProximaNova", sans-serif;
+$font-second: "DaysOne", sans-serif;
+
+$fs-main: 18px;
+$fs-1: 60px;
+$fs-2: 38px;
+$fs-3: 36px;
+$fs-4: 25px;
+$fs-5: 18px;
+$fs-6: 16px;
+$fs-7: 14px;
+
+// Transition
+%transition { transition: all .3s ease-in-out; }
+%transition-small { transition: all .1s ease-in-out; }
+%transition-medium { transition: all .5s ease-in-out; }
+%transition-large { transition: all .8s ease-in-out; }

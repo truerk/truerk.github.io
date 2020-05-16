@@ -1,0 +1,38 @@
+[am-burger-button] {
+    display: inline-block;
+    cursor: pointer;
+
+    [am-burger-line] {
+        width: 20px;
+        height: 2px;
+        background-color: $color-gray;
+        margin: 3px 0;
+        border-radius: 100px;
+        @extend %transition;
+    }
+
+    &:hover {
+        [am-burger-line] {
+            background-color: $color-main;
+        }
+    }
+
+    &[active] {
+        [am-burger-line] {
+            background-color: $color-main;
+
+            &:nth-child(1) {
+                -webkit-transform: rotate(-45deg) translate(-2.5px, 5px) ;
+                transform: rotate(-45deg) translate(-2.5px, 5px) ;
+            }
+            &:nth-child(2) {
+                @extend %transition-small;
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                -webkit-transform: rotate(45deg) translate(-2px, -5px) ;
+                transform: rotate(45deg) translate(-2px, -5px) ;
+            }
+        }
+    }
+}

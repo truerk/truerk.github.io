@@ -1,0 +1,47 @@
+[am-icon-circle] {
+    background: $color-second;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+[am-icon-circle='small'] {
+    width: 75px;
+    height: 75px;
+
+    @include sm() {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+[am-icon-circle='mini'] {
+    width: 40px;
+    height: 40px;
+}
+
+[am-icon-group] {
+    display: flex;
+    align-items: center;
+
+    [am-icon-circle] {
+        margin-right: 15px;
+    }
+
+    &[direction='row'] {
+        flex-direction: row;
+    }
+
+    &[direction='column'] {
+        flex-direction: column;
+
+        [am-icon-circle] {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

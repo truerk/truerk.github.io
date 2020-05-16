@@ -1,0 +1,44 @@
+.foryou {
+
+    &__services {
+        &-container {
+            margin-top: 70px;
+
+            > [am-grid="item"]:nth-child(n + 4) {
+                margin-top: 40px;
+            }
+
+            @include md() {
+                > [am-grid="item"] {
+                    margin-top: 30px;
+                }
+            }
+
+            @include xs() {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__block {
+        margin: 0 auto;
+        max-width: 250px;
+
+        &-img {
+            img {
+
+            }
+        }
+
+        &-text {
+            //margin-top: 30px;
+            text-align: center;
+            max-width: 250px;
+        }
+    }
+
+    [am-section-background][hidden] {
+        top: 50%;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,36 @@
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin-top: 40px;
+
+    &__content {
+        height: 100%;
+        position: relative;
+    }
+
+    .swiper-slide {
+        height: 105px;
+        position: relative;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .swiper-container {
+        margin: 0 20px;
+
+        @include sm() {
+            margin: 0 40px;
+        }
+    }
+
+    @include xs() {
+        margin-top: 25px;
+    }
+}

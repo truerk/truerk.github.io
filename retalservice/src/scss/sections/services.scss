@@ -1,0 +1,103 @@
+.services {
+
+    &__cards {
+        margin-top: 50px;
+        margin-bottom: 25px;
+
+        > [am-grid="container"] {
+            > [am-grid="item"] {
+                margin-bottom: 25px;
+            }
+        }
+
+        @include xs() {
+            padding: 0 10px;
+            margin-top: 30px;
+        }
+    }
+
+    &__card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.07);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &-img {
+            display: flex;
+
+            img {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &-content {
+            padding: 30px 30px 25px;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-name {
+            margin-bottom: 20px;
+        }
+
+        &-prices {
+            margin-top: auto;
+            font-weight: bold;
+            font-size: 24px;
+        }
+    }
+
+    &__freeRide {
+        display: flex;
+        border: 10px solid $color-second;
+        padding: 10px;
+        max-width: 950px;
+        width: 100%;
+        margin: 0 auto;
+
+        &-img {
+            max-width: 346px;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        &-title {
+            margin-bottom: 20px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        &-text {
+            max-width: 425px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @include sm() {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            &-title {
+                margin-top: 30px;
+            }
+        }
+    }
+}

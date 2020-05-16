@@ -1,0 +1,89 @@
+[am-wrapper] {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+[am-container] {
+    max-width: $container-width;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: $offset;
+    padding-right: $offset;
+    // position: relative;
+}
+
+
+@for $i from 1 through 4 {
+    [data-am-container][data-spacing='#{$i}'] {
+        padding-right: #{$i * 7.5}px;
+        padding-left: #{$i * 7.5}px;
+    }
+}
+
+[am-container-fluid] {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    // position: relative;
+}
+
+// [am-content] {
+//     width: 100%;
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+//     height: 100%;
+
+//     //Направление главной оси
+//     &[direction='row'] {flex-direction: row}
+//     &[direction='row-reverse'] {flex-direction: row-reverse}
+//     &[direction='column'] {flex-direction: column}
+//     &[direction='column-reverse'] {flex-direction: column-reverse}
+//     //Выравнивание по главной оси
+//     &[justify='start'] {justify-content: flex-start}
+//     &[justify='end'] {justify-content: flex-end}
+//     &[justify='center'] {justify-content: center}
+//     &[justify='space-between'] {justify-content: space-between}
+//     &[justify='space-around'] {justify-content: space-around}
+//     //Выравнивание по поперечной оси
+//     &[align-items='start'] {align-items: flex-start}
+//     &[align-items='end'] {align-items: flex-end}
+//     &[align-items='center'] {align-items: center}
+//     &[align-items='baseline'] {align-items: baseline}
+//     &[align-items='stretch'] {align-items: stretch}
+// }
+
+@media (max-width: $lg) {
+    [am-container] {
+        max-width: $container-width-lg;
+    }
+}
+
+@media (max-width: $md) {
+    [am-container] {
+        max-width: $container-width-md;
+    }
+}
+
+@media (max-width: $sm) {
+    [am-container] {
+        max-width: $container-width-sm;
+        padding-left: $offset-sm;
+        padding-right: $offset-sm;
+    }
+    [am-container-fluid] {
+        padding-left: $offset-sm;
+        padding-right: $offset-sm;
+    }
+
+    @for $i from 1 through 4 {
+        [data-am-container][data-spacing='#{$i}'] {
+            padding-right: #{$offset-sm}px;
+            padding-left: #{$offset-sm}px;
+        }
+    }
+}

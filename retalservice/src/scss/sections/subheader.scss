@@ -1,0 +1,120 @@
+[am-container="subheader"] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.subheader {
+    //padding-top: 0;
+    //height: 700px;
+
+    &__image {
+        position: absolute;
+        bottom: 10px;
+
+        @include lg() {
+            max-width: 60%;
+            bottom: 50px;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 73px;
+        margin-bottom: 60px;
+    }
+
+    &__left {
+        margin-top: 90px;
+
+        [am-icon-group] {
+            color: red;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 35px;
+
+            p {
+                max-width: 325px;
+            }
+        }
+    }
+
+    @include md() {
+        & {
+            //height: 600px;
+            margin-top: 74px;
+        }
+
+        &__left {
+            margin-top: 0;
+        }
+
+        &__image {
+            // bottom: 165px;
+            // max-width: 100%;
+            // position: static;
+        }
+
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            margin-bottom: 25px;
+        }
+
+        &__left {
+            [am-icon-group] {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @include sm() {
+        & {
+            padding-top: 0;
+            height: unset;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__image {
+            bottom: initial;
+            top: 65px;
+
+            &-mobile {
+                height: 230px;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                margin-top: 20px;
+                padding: 0 30px;
+
+                img {
+                    max-width: 100%;
+                    width: 300px;
+                }
+            }
+        }
+
+        [am-section-background] {
+            height: 250px;
+        }
+
+        [am-grid="container"] {
+            flex-direction: column-reverse;
+        }
+
+        &__right {
+            align-items: center;
+        }
+
+        &__left {
+            justify-content: flex-start!important;
+            margin-top: 20px;
+        }
+    }
+}
+

@@ -1,0 +1,50 @@
+@import '../utils/index.scss';
+
+// Components
+@import './components/am-icon-group.scss';
+@import './components/am-section-background.scss';
+@import './components/am-section-header.scss';
+@import './components/am-logo.scss';
+@import './components/am-burger-button.scss';
+@import './components/am-carousel.scss';
+
+// Sections
+@import './sections/header.scss';
+@import './sections/subheader.scss';
+@import './sections/services.scss';
+@import './sections/foryou.scss';
+@import './sections/trust.scss';
+@import './sections/about.scss';
+@import './sections/map.scss';
+@import './sections/footer.scss';
+
+
+[am-wrapper="content"] {
+    overflow: hidden;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+
+    @include sm() {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.color-second {
+    color: $color-second;
+}
+
+img[load-src] {
+    opacity: 0.1;
+    will-change: opacity;
+    transition: all 0.3s;
+}
+
+img[load-src].loaded {
+    opacity: 1;
+}

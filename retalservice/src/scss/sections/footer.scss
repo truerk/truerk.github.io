@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+    &__link {
+        @include md() {
+            margin-top: 10px;
+        }
+    }
+
+    [am-logo] {
+        @include sm() {
+            margin-bottom: 10px;
+        }
+    }
+}

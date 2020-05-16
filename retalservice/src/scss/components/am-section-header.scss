@@ -1,0 +1,24 @@
+[am-section-header] {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 6px;
+        background: $color-second;
+        margin: 0 auto;
+        margin-top: 20px;
+
+        @include sm() {
+            height: 5px;
+            width: 90px;
+        }
+    }
+
+    @include sm() {
+        font-size: 30px;
+    }
+}

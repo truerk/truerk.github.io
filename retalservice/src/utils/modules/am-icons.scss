@@ -1,0 +1,150 @@
+[am-icon="logo"] {
+    @include svg-logo();
+    @include svg-logo-dims();
+    display: inline-block;
+    flex-shrink: 0;
+
+    @include sm() {
+        @include svg-logo_small();
+        @include svg-logo_small-dims();
+    }
+}
+
+[am-icon="logo_medium"] {
+    @include svg-logo_medium();
+    @include svg-logo_medium-dims();
+    display: inline-block;
+    flex-shrink: 0;
+
+    @include sm() {
+        @include svg-logo();
+        @include svg-logo-dims();
+    }
+}
+
+[am-icon="logo_small"] {
+    @include svg-logo_small();
+    @include svg-logo_small-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_repairs_small"] {
+    @include svg-icon_repairs_small();
+    @include svg-icon_repairs_small-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_repairs"] {
+    @include svg-icon_repairs();
+    @include svg-icon_repairs-dims();
+    display: inline-block;
+    flex-shrink: 0;
+
+    @include sm() {
+        @include svg-icon_repairs_small();
+        @include svg-icon_repairs_small-dims();
+    }
+}
+
+[am-icon="icon_refill_small"] {
+    @include svg-icon_refill_small();
+    @include svg-icon_refill_small-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_refill"] {
+    @include svg-icon_refill();
+    @include svg-icon_refill-dims();
+    display: inline-block;
+    flex-shrink: 0;
+
+    @include sm() {
+        @include svg-icon_refill_small();
+        @include svg-icon_refill_small-dims();
+    }
+}
+
+[am-icon="icon_place_small"] {
+    @include svg-icon_place_small();
+    @include svg-icon_place_small-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_place_mini"] {
+    @include svg-icon_place_mini();
+    @include svg-icon_place_mini-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_place"] {
+    @include svg-icon_place();
+    @include svg-icon_place-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_phone"] {
+    @include svg-icon_phone();
+    @include svg-icon_phone-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_mail"] {
+    @include svg-icon_mail();
+    @include svg-icon_mail-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_close_gray"] {
+    @include svg-icon_close_gray();
+    @include svg-icon_close_gray-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_close_black"] {
+    @include svg-icon_close_black();
+    @include svg-icon_close_black-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_burger_gray"] {
+    @include svg-icon_burger_gray();
+    @include svg-icon_burger_gray-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_arrow_circle_gray"] {
+    @include svg-icon_arrow_circle_gray();
+    @include svg-icon_arrow_circle_gray-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+[am-icon="icon_arrow_circle_gold"] {
+    @include svg-icon_arrow_circle_gold();
+    @include svg-icon_arrow_circle_gold-dims();
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+@media (max-width: $lg) {
+
+}
+
+@media (max-width: $md) {
+
+}
+
+@media (max-width: $sm) {
+
+}

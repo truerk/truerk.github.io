@@ -1,0 +1,33 @@
+[am-logo] {
+    display: flex;
+    align-items: center;
+
+    [am-logo-text] {
+        margin-left: 65px;
+        font-family: $font-second;
+        font-size: 25px;
+        display: block;
+
+        @include sm() {
+            font-size: 18px;
+            line-height: 23px;
+            margin-left: 44px;
+        }
+    }
+}
+
+[am-logo="bottom"] {
+    flex-direction: column;
+    justify-content: flex-end;
+
+    [am-logo-text] {
+        margin: 0;
+        position: relative;
+        top: 41px;
+
+        @include sm() {
+            top: 30px;
+            margin-left: 0;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+[am-wrapper="header"] {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    [am-icon] {
+        margin-right: 10px;
+    }
+
+    @include md() {
+        background: #fff;
+        height: 74px;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        box-shadow: 0px 5px 10px rgba(186,186,186,0.1);
+    }
+
+    @include sm() {
+        height: 50px;
+    }
+}
+
+.menu {
+    position: relative;
+    z-index: 2;
+    margin-top: 35px;
+
+    [am-content="menu"] {
+        margin-top: 1px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @include lg() {
+            justify-content: flex-start;
+        }
+
+        @include md() {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item:nth-child(2) {
+        margin: 0 50px;
+
+        @include md() {
+            margin: 10px 0;
+        }
+    }
+
+    @include md() {
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #fff;
+    }
+
+    // Mobile menu
+    &__mobile {
+        position: relative;
+        z-index: 1;
+        margin-top: -100px;
+        background: #fff;
+        opacity: 0.7;
+        //max-height: 500px;
+
+        @extend %transition-medium;
+        height: 0;
+        overflow: hidden;
+
+        &-items {
+            padding: 10px 0 20px 0;
+            border-bottom: 2px solid $color-gray-light;
+        }
+
+        &-item {
+            cursor: pointer;
+            @extend %transition-small;
+
+            &:hover {
+                color: $color-second;
+            }
+        }
+
+        &-item + &-item {
+            margin-top: 14px;
+        }
+
+        &-adress {
+            [am-icon-group] {
+                margin: 20px 0;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+            margin-top: 0px;
+            height: 100vh;
+        }
+    }
+}
